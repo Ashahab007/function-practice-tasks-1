@@ -53,3 +53,24 @@ function make_avg(arr, arrSize) {
 
 let avgResult = make_avg(myArr, size);
 console.log(`The average result is ${avgResult}`);
+
+//! Task-4
+/* 
+Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
+*/
+
+//! Task-5
+/* 
+Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
+*/
+
+function odd_even(val) {
+  if (val % 2 === 0) {
+    return "even";
+  } else {
+    return "odd";
+  }
+}
+
+let findOddEven = odd_even(10);
+console.log("The input number is: ", findOddEven);
