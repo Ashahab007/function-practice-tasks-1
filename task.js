@@ -36,6 +36,7 @@ let myArr = [5, 10, 20, 10];
 let size = myArr.length;
 
 function make_avg(arr, arrSize) {
+  // Using for of loop
   /* let sum = 0;
   for (const element of arr) {
     sum = sum + element;
@@ -58,6 +59,21 @@ console.log(`The average result is ${avgResult}`);
 /* 
 Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
 */
+
+let binaryString = "010100";
+
+function count_zero(params) {
+  let count = 0;
+  for (const num of params) {
+    if (num === "0") {
+      count++;
+    }
+    // console.log(num);
+  }
+  console.log("The number of '0' is", count, "times.");
+}
+
+count_zero(binaryString);
 
 //! Task-5
 /* 
